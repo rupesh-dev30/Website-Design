@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+#main{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url("./src/italy.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+#nav{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  padding: 45px 60px 30px 50px;
+  z-index: 1000;
+}
+
+#nav i{
+  display: none;
+  font-size: 23px;
+}
+
+#nleft h1{
+  font-size: 30px;
+  color: white;
+}
+
+#nav a{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+#nav #nright{
+  display: flex;
+  gap: 30px;
+}
+
+#nav #nright a:nth-child(1){
+  padding-bottom: 3px;
+  border-bottom: 3px solid white;
+}
+
+@media(max-width: 500px){
+  #main #nav{
+    height: 70px;
+    padding: 0 20px;
+  }
+
+  #nav #nright{
+    display: none;
+  }
+
+  #nav h1{
+    font-size: 16px;
+  }
+
+
+}
+
+@media(max-width: 900px){
+  #nav i{
+    display: inline;
+    font-size: 17px;
+  }
+
+  #nav #nright{
+    display: none;
+  }
+}
+
+#main #left{
+  position: relative;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+  
+}
+
+#left #scroll{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: white;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform-origin: 0 50%;
+  transform: translate(-50%, 0) rotate(-90deg);
+}
+
+#scroll #line{
+  width: 100px;
+  height: 2px;
+  background-color: white;
+}
+
+#scroll p{
+  font-size: 10px;
+}
+
+#left .place{
+  opacity: 1;
+  color: white;
+  width: 100%;
+}
+
+#left .place h4{
+  display: inline-block;
+  border-bottom: 2px solid white;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+
+#left .place:nth-child(2) h4{
+  font-size: 60px;
+  white-space: nowrap;
+  opacity: 1;
+}
+
+#left .place:nth-child(2) h6{
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+.place h4{
+  font-weight: 500;
+}
+
+.place h6{
+  font-weight: 600;
+}
+  
+#main #right{
+  width: 75%;
+  height: 100%;
+}
+
+#right #text{
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(0, -50%);
+  color: white;
+  text-align: right;
+}
+
+#text h3{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#text h1{
+  line-height: 1;
+  font-size: 200px;
+  font-weight: 500;
+}
+
+#text #input{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 8px;
+  border-bottom: 3px solid white;
+}
+
+#text #input i{
+  font-size: 20px;
+}
+
+#text input{
+  width: 100%;
+  background-color: transparent;
+  padding: 12px 12px;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+#text input::placeholder{
+  color: white;
+  font-size: 20px;
+}
+
+#right small{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: white;
+}
