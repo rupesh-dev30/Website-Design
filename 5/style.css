@@ -1,0 +1,62 @@
+:root{
+  --blue: #B3D9E6;
+  --pink: #F0E4E6;
+  --blue-text: #F4F6FA;
+  --pink-text: #786E6C;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+#main{
+  width: 100%;
+  height: 100%;
+}
+
+#left{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue);
+  clip-path: polygon(0% 0%, 60% 0% , 40% 100%, 0% 100%);
+  overflow: hidden;
+}
+
+#left img{
+  width: 50%;
+  height: 70%;
+  position: absolute;
+  bottom: 0;
+  left: -50px;
+}
+
+#right{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #EAE0DE;
+  clip-path: polygon(60% 0, 100% 0%, 100% 100%, 40% 100%);
+}
+
+#right #img{
+  position: absolute;
+  right: -20px;
+  width: 60%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: bottom;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
