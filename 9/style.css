@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:  "Roboto", sans-serif;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+#main{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#left{
+  position: relative;
+  color: white;
+  width: 35%;
+  height: 100%;
+  background-color: #ee3225;
+  padding: 10px;
+}
+
+#left #text{
+  position: absolute;
+  width: 90%;
+  top: 20%;
+  left: 10%;
+}
+
+#text h1{
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+#text h1 span{
+  font-weight: 800;
+  /* font-size: 80px; */
+}
+
+#text h2{
+  font-size: 30px;
+  /* opacity: 0.8; */
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+#text p{
+  width: 70%;
+  /* opacity: 0.8; */
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+#text button{
+  margin-top: 30px;
+  padding: 10px 25px;
+  background-color: white;
+  border: none;
+  color: red;
+  border-radius: 4px;
+}
+
+#left #btm{
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  width: 90%;
+  background-color: #fff;
+  padding: 20px;
+  color: black;
+}
+
+#btm h3{
+  font-size: 20px; 
+  color: rgb(220, 70, 70);
+}
+
+#btm p{
+  font-size: 12px;
+  width: 80%;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+#right{
+  position: relative;
+  width: 65%;
+  height: 100%;
+  background-color: rgb(233, 233, 233);
+}
+
+#right #center{
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 60%;
+}
+
+#center h1{
+  font-size: 60px;
+  color: #ee3225;
+}
+
+#center h1 span{
+  color: black;
+  font-weight: 300;
+}
+
+#center h2{
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+#center h2 span{
+  font-weight: 700;
+}
+
+#center p{
+  font-size: 13px;
+  width: 70%;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+#center #btns{
+  display: flex;
+  gap: 20px;
+}
+
+#center button{
+  padding: 14px 22px;
+}
+
+#center button:nth-child(1){
+  background-color: transparent;
+  border: 1px solid #ee3225;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #ee3225;
+}
+
+#center button:nth-child(2){
+  background-color: #ee3225;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+#samples{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: start;
+}
+
+#samples>h1{
+  font-size: 20px;
+  color: black;
+}
+
+.samples{
+  display: flex;
+  gap: 30px;
+}
+
+.sample{
+  width: 90px;
+}
+
+.sample img{
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#right>img{
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
